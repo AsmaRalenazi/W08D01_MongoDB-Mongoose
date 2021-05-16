@@ -5,11 +5,12 @@
   "main": "main.js",
   "dependencies": {
     "express": "^4.17.1",
-    "init": "^0.1.2"
+    "init": "^0.1.2",
+    "mongoose": "^5.12.9"
   },
   "devDependencies": {},
   "scripts": {
-    "start":"nodemon main.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

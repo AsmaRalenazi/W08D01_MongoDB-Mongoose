@@ -7,7 +7,7 @@ const port =3000;
 
 
 // practice
-//Q2
+//Q2 & Q3
 app.get("/todos", (req, res) => {
     todoModel
       .find()
@@ -54,7 +54,7 @@ app.get("/todos", (req, res) => {
     todoModel
       .findOneAndUpdate(
         { task },
-        { description, deadline, isCompleted, priority }
+        { description, deadline, isCompleted, priority },{new:true}
       )
       .then((result) => {
         res.json(result);

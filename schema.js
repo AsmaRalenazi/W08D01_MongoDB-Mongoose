@@ -2,11 +2,11 @@ const mongoose= require ("mongoose");
 
 const todoSchema =new mongoose.Schema({
 
-    task:{type:String, required:true},
-    description:{type:String, required:true},
-    deadline :{type:String, required:true},
-    isCompleted:{type:String, required:true},
-    priority:{type:String, }
+    task:{type:String, require:true},
+    description:{type:String},
+    deadline :{type:String, require:true},
+    isCompleted:{type:Boolean, require:true},
+    priority:{type:String,  require:true}
 })
 
 module.exports=mongoose.model("todo",todoSchema)
